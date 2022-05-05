@@ -80,7 +80,7 @@ exports.getAllReservations = getAllReservations;
  */
 const getAllProperties = (options, limit = 10) => {
 
-  return pool.query(
+  return pool.query(ø
       `SELECT * FROM properties LIMIT $1`,
       [limit])
     .then((result) => {
